@@ -37,7 +37,7 @@ int main(){
   return 0;
 }
 
-
+///
 #include<iostream>
 using namespace std;
 bool search(int arr[],int size,int key){
@@ -53,9 +53,9 @@ bool search(int arr[],int size,int key){
 }
 int main(){
   
-  int arr[]={2,4,5,-5,30,65};
+  int arr[6]={2,4,5,-5,30,65};
   cout<<"enter the element \n"<<endl;
-  cin>>arr[i];
+  cin>>arr[6];
   
   int key;
   cin>>key;
