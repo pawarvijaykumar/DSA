@@ -23,8 +23,8 @@ int binarySearch(int arr[],int n,int key){
 
 int main(){
   
-  int a[5]={3,4,3,5,23};
-  int aindex= binarySearch(a,5,98);
+  int a[6]={5,7,7,8,8,10};
+  int aindex= binarySearch(a,6,8);
   cout<<"the key value is\n"<<aindex<<endl;
 
   return 0;

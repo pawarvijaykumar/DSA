@@ -5,23 +5,23 @@ int binarySearch(int arr[],int key,int n){
   
   int start=0;
   int end=n-1;
-  int mid=(start+end)/2;
   while(start<=end){
+    int mid=(start+end)/2;
    // return mid;key==arr[mid
     if(key==arr[mid]){
-    start=mid+1;
+    //start=mid+1;
+    return mid;
     }
-    if(key>arr[mid]){
-      mid=mid+1;
+    else if(key>arr[mid]){
+      start=mid+1;
     }else{
-      mid=mid-1;
+      end =mid-1;
     }
-    mid=(start+end)/2;
+    //mid=(start+end)/2;
 
   }
     
-  return -1;
-
+ //
 }
 int binarySearch(int arr[],int key,int n){
 int start=0;
