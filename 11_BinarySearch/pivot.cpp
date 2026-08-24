@@ -18,9 +18,9 @@ int pivot(int arr[],int n){
 } 
  
 int main(){ 
-  int arr[6]={3,8,10,17,1}; 
+  int arr[6]={1,7,3,6,5,6}; 
   //int arrindex=pivot(arr,3); 
   cout<<"the pivot element is \n"<<pivot(arr,6)<<endl; 
    
   return 0; 
-}see code is correct or no ?
+}
