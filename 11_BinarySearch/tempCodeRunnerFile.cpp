@@ -1,30 +1,31 @@
-
 #include<iostream>
 using namespace std;
 
+int pivot(int arr[], int n){
+    int start = 0;
+    int end = n - 1;
+    int mid = (start + end) / 2;
 
-int peakIndexInMountainArray(int arr[],int n) {
-  int start=0;
-  int end=n-1;
-  int mid=(start+end)/2;
-  while(start<end){
-    if(arr[mid]<arr[mid+1]){
+    while(start <= end){
 
-      start=mid+1;
-            
-    }else{
-      end=mid;
+        if(arr[mid] >= arr[0]){
+            start = mid + 1;
+        }
+        else{
+            end = mid;
+        }
 
+        mid = (start + end) / 2;
     }
-    mid=(start+end)/2;
-  }
-  return start;
-};
+
+    return start;
+}
 
 int main(){
-  int  arr[4]={1,2,4,2};
-  int arrindex=peakIndexInMountainArray(arr,4);
-  cout<<"the mountail arr id\n"<<arrindex<<endl;
-  return 0;
 
+    int arr[5] = {3,8,10,17,1};
+
+    cout << "The pivot index is: " << pivot(arr,5) << endl;
+
+    return 0;
 }
