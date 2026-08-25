@@ -23,12 +23,24 @@ long long int binarySearch(int n){
         }
         return ans;
     }
+double moreprecision(int n,int precision,int tempSol){//this function means if ub want to take this root of 78 is 8.831 given the point enterger value
+  double factor=1;
+  double ans=tempSol;
+  for(int i=0;i<precision;i++){
+    factor=factor/10;
+
+    for(double j=ans;j*j<n;j=j+factor){
+      ans=j;
+    }
+  }
+  return ans;
+} 
 int main(){
   int n;
   cout<<"enter the suare lement is"<<endl;
   cin>>n;
   int tempSol=binarySearch( n);
-  cout<<"the sqaure is \n"<< tempSol<<endl;
+  cout<<"the sqaure is \n"<<moreprecision(n,3,tempSol)<<endl;
 
 
   
