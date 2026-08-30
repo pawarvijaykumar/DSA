@@ -3,7 +3,7 @@
 
 
 //A deque allows you to insert and delete elements from both the front and the back.#include<iostream>
-
+#include<iostream>
 #include <deque>
 
 using namespace std;
@@ -17,11 +17,13 @@ int main() {
     d.push_front(20);
 
 
-    
+    for(int i:d){
+      cout<<d[1]<<endl;
+      cout<<d[2]<<endl;
+      
+    };
     //cout<<"the deque is"<<endl;
     
-    cout<<d[1]<<endl;
-    cout<<d[2]<<endl;
 
   cout<<"print the fisrt index \n"<<d.at(1)<<endl;
   cout<<"front"<<d.front()<<endl;
