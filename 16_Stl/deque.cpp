@@ -1,4 +1,8 @@
-#include<iostream>
+
+
+
+
+//A deque allows you to insert and delete elements from both the front and the back.#include<iostream>
 
 #include <deque>
 
@@ -16,8 +20,8 @@ int main() {
     
     //cout<<"the deque is"<<endl;
     
-    cout<<d[0]<<endl;
     cout<<d[1]<<endl;
+    cout<<d[2]<<endl;
 
   cout<<"print the fisrt index \n"<<d.at(1)<<endl;
   cout<<"front"<<d.front()<<endl;
