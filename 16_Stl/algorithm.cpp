@@ -33,7 +33,7 @@ int main(){
   cout<<"min"<<*min_element(v.begin(), v.end());
   cout<<endl;
 
-  cout<<"upperCase"<<upper_bound(v.begin(), v.end(),45);
+ //cout<<"upperCase"<<upper_bound(v.begin(), v.end(),45);
 
   
   
