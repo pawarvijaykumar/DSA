@@ -1,4 +1,5 @@
 #include<iostream>
+#include<climits>
 using namespace std;
 //its a row of sum or row wise sum 
 // void printSumOfRow(int arr[][3],int row,int col){
@@ -15,22 +16,41 @@ using namespace std;
     
 //   cout<<endl;
 //}
-void printSumOfCol(int arr[][3],int row,int col){
+// void printSumOfCol(int arr[][3],int row,int col){
 
-  for (int col=0;col<3;col++)
-  {
+//   for (int col=0;col<3;col++)
+//   {
+//     int sum=0;
+//     for (int row =0;row<4;row++)
+//     {
+//       sum+=arr[row][col];
+//     }
+//     cout<<sum<<" ";
+//   }
+    
+//   cout<<endl;
+// };
+
+int  LargestSumOfRow(int arr[][3],int row,int col){
+  int max=INT_MIN;
+  int rowIndex=-1;
+  for(int row=0;row<3;row++){
     int sum=0;
-    for (int row =0;row<4;row++)
-    {
+    for (int col=0;col<3;col++){
       sum+=arr[row][col];
     }
-    cout<<sum<<" ";
+    if(sum>max){
+      max=sum;
+      rowIndex=row;
+    }
+
   }
-    
-  cout<<endl;
+  cout<<"the row sumis"<<max<<endl;
+  return rowIndex;
+
 }
 int main(){
-  int arr[4][3];
+  int arr[3][3];
   // cout<<"enter the element of row-wise"<<endl;
   // for(int i=0;i<3;i++){
   //   for(int j=0;j<4;j++){
@@ -39,13 +59,17 @@ int main(){
   // }
   // printSumOfRow(arr,3,3);
 
- cout<<"enter the element of col-wise"<<endl;
-  for(int i=0;i<4;i++){
+//  cout<<"enter the element of col-wise"<<endl;
+  for(int i=0;i<3;i++){
     for(int j=0;j<3;j++){
       cin>>arr[i][j];
     }
   }
-  printSumOfCol(arr,4,3);
+//   printSumOfCol(arr,4,3);
+
+
+  int ans=LargestSumOfRow(arr,3,3);
+  cout<<"the large Sum is"<<ans<<endl;
 
   return 0;
 }
