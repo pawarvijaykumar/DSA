@@ -19,7 +19,7 @@ int countPrime(int n){
   return Count;
 };
 
-
+//the time complexicity l(l(n))
 int main(){
   int n;
   cout<<"counter the element ";
