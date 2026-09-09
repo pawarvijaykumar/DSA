@@ -10,12 +10,12 @@ int fastPower(int a ,int b,int MOD){
     b=b/2;
   }
   return ans;
-
+//complexcity 0(logn)->because /2 0r  may be
 }
 int main(){
   int a =2;
   int b=10;
-  int MOD=1000000009;
+  int MOD=1000000007;
   cout<<"the fast exponenation is"<< fastPower(a,b,MOD)<<endl;
   
   return 0;
