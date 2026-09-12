@@ -15,7 +15,7 @@ int main(){
 
   cout<<name<<endl;
   cout<<sizeof(name)<<endl;//sizeof → counts \0
-  cout<<strlen(name)<<endl;
+  cout<<strlen(name)<<endl;//strlen → does NOT count \0
 
 
   //cout<<sizeof(c)<<endl;
@@ -25,6 +25,6 @@ int main(){
   //char arr[6]={1,2,3,4,5,6};
   char *p=arr;
   
-  cout<<*p<<endl;
+  cout<<*p<<endl;//H
   return 0;
 }
