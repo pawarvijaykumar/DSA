@@ -28,7 +28,7 @@ cout<<i[arr]<<endl;//37
 //temp variable
 int temp[10];
 cout<<sizeof(temp)<<endl;//40 1 int me 10 bytes means 10*temp =40
-cout<<"1st"<<sizeof(*temp)<<endl;
+cout<<"1st"<<sizeof(*temp)<<endl;//its means first index call in bytes==4
 cout<<"2st"<<sizeof(&temp)<<endl;
 
   
