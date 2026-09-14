@@ -32,7 +32,7 @@ int main(){
   int ans=getSum(arr,n);
   cout<<ans<<endl;
 
-  delete[] arr;
+  delete[] arr;//memory release
 
   return 0;
 }
