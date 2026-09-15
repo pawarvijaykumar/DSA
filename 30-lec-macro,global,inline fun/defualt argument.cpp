@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 //Default argument rightmost side se continuous hona chahiye.
-void change(int arr[],int n,int start=5){
+void change(int arr[],int n,int start=5){//dena hai heto dete warna me khude se lelunga 
   for(int i=0;i<start;i++){
     cout<<arr[i]<<" ";
   }
