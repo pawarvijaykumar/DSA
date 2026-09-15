@@ -1,5 +1,9 @@
 #include<iostream>
 using namespace std;
+
+//inline is a request to the compiler, not a guarantee.
+
+//The compiler decides whether actually to inline the function
 inline int square(int x){
   return x*x;
 
