@@ -4,11 +4,11 @@ bool palindrom(int  arr[],int n){
   int start=0;
   int end=n-1;
   while(start<=end){
-    if(arr[start]!=arr[end]){
+    if(arr[start++]!=arr[end--]){
       return 0;
     }else{
-      start++;
-      end--;
+      // start++;
+      // end--;
     }
   }
   return 1;
