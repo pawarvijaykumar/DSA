@@ -20,7 +20,7 @@ string toUpperCase(string s1) {
         //char ch;
   int n=s1.size();
   for(int i=0;i<n;i++){
-    if(s1[i]>='A' && s1[i]<='Z'){
+    if(s1[i]>='a' && s1[i]<='z'){
       s1[i]=s1[i]-32;//diffrence for oly change of sine to "-"
     }
 
