@@ -5,8 +5,11 @@ int binSearch(int arr[],int key){
   //int mid=(start+end)/2;
   // while(start<=end){
     //base case
-    if(key==0||key==1){
-      return true;
+    if(key==0){
+      return 0;
+    }
+      if(key==1){
+      return 1;
     }
     if(arr[0]>arr[1]){
       return false;

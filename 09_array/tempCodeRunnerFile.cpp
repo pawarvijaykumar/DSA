@@ -1,28 +1,32 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-int majorityElement(vector<int>& nums) {
+vector<int> threeSum(vector<int>& nums, int target) {
   int n=nums.size();
-  int count=0;
-  int candidate=0;
+        //int target=0;
   for(int i=0;i<n;i++){
-    if(count==0){
+    for(int j=i+1;j<n;j++){
+      for(int k=j+1;k<n;k++){
+
       
-      candidate=nums[i];
-    }
-    if(nums[i]==candidate){
-      count++;
-    }else{
-      count--;
+        if(nums[i]+nums[j]+nums[k]==target){
+          return {i,j,k};//means is store index value 
+       
+        }   
+      }        
     }
   }
-  return candidate;
-  
+  return {};
 }
-int main(){
-  vector<int>nums={2,2,1,1,1,2,2,6,6,6,6,6,6,6,6,};
-  cout<<majorityElement(nums)<<endl;
 
+int main(){
+  vector<int>nums={2,7,15,11};
+  int target=24;
+  vector<int>ans=threeSum(nums,target);
+  cout<<ans[0]<<" "<<ans[1]<<" "<<ans[2]<<endl;
+  
+    
+  //twoSum(nums,9);
   
   return 0;
 }

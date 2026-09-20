@@ -12,16 +12,11 @@ bool search(int arr[],int size,int key){
 //bool-->>menas treu or false
 }
 int main(){
-  int size;
-  cout << "Enter the size of array: ";
-  cin >> size;
-  //int arr[]={2,4,5,-5,30,65};
-  //cout<<"enter the element \n"<<endl;
-  int arr[size];
-  cout<<"enter the "<<size<<"element:\n";
-  for(int i=0;i<size;i++){
-    cin>>arr[i];
-  }
+  
+  int arr[6]={2,4,5,-5,30,65};
+  cout<<"enter the element \n"<<endl;
+  cin>>arr[6];
+  
   int key;
   cin>>key;
   bool found=search(arr,10,key);
@@ -36,3 +31,7 @@ int main(){
   
   return 0;
 }
+
+
+//int arr[]={2,4,5,-5,30,65};
+  //cout<<"enter the element \n"<<endl;
