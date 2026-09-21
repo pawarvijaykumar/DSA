@@ -1,5 +1,18 @@
 #include<iostream>
 using namespace std;
+//without use j data type 
+// bool palindrome(int i, string &s) {
+
+//     if(i >= s.length() / 2) {
+//         return true;
+//     }
+
+//     if(s[i] != s[s.length() - i - 1]) {
+//         return false;
+//     }
+
+//     return palindrome(i + 1, s);
+// }
 
 
 bool palindrom(int i,int j,string &str){
@@ -35,7 +48,7 @@ bool palindrom(int i,int j,string &str){
 
 
 int main(){
-  string str="madamr";
+  string str="madam";
   cout<<str<<endl;
   if(palindrom(0,str.length()-1,str)){
 
