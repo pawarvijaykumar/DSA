@@ -1,44 +1,53 @@
 #include<iostream>
 using namespace std;
-//to lower case later
-string toLowerCase(string s) {
-        //char ch;
-  int n=s.size();
-  for(int i=0;i<n;i++){
-    if(s[i]>='A' && s[i]<='Z'){
-      s[i]=s[i]+32;
-    }
-
+void reverseString(char name[],int n){
+  
+  int start=0;
+  int end=n-1;
+  while(start<=end){
+    swap(name[start++],name[end--]);
   }
-  return s;
-        
+  
+
 }
+// int getlength(char name[]){  
+//   int count=0;
+//   for(int i=0;name[i]!='\0';i++){//the arr will be stop upto null come and then after is given automaticaly stop and then we know lentgh of arr
+//     count++;
 
-//to upercase later
+//   }
+//   return count;
+// }
 
-string toUpperCase(string s1) {
-        //char ch;
-  int n=s1.size();
-  for(int i=0;i<n;i++){
-    if(s1[i]>='A' && s1[i]<='Z'){
-      s1[i]=s1[i]-32;//diffrence for oly change of sine to "-"
-    }
-
-  }
-  return s1;
-        
-}
 int main(){
-  string str="HELOO";
-  
-  string ans=toLowerCase(str);
-  cout<<ans<<endl;
-
-
-  cout<<endl;
-  string str1="hello";
-  string ans1=toUpperCase(str1);
-  cout<<ans1<<endl;
-  
+  char name[20];
+  cout<<"enter your name"<<endl;
+  cin>>name;
+  //int len=getlength(name);
+  //cout<<"the reverse string is "<<len<<endl;
+  reverseString(name,3);
+  cout<<"the name is   "  <<name<<endl;
   return 0;
-}
+};
+
+  
+  
+
+  // int getlength(char name[]){
+  // int count=0;
+  // for(int i=0;name[i]!='\0';i++){//the arr will be stop upto null come and then after is given automaticaly stop and then we know lentgh of arr
+  //   count++;
+
+  //}
+  // return count;
+
+// int main(){
+//   char name[20];
+//   cout<<"enter your name"<<endl;
+//   cin>>name;
+//   //name[3]='\0';//is a null chararcter means when i enter mynname vijaybthe give vu-ij becuse index is 3 null character
+//   cout<<"the name is   "  <<name<<endl;
+//   cout<<"the lentgh of my name is "<<getlength(name);
+
+//   return 0;
+// }
