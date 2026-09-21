@@ -7,6 +7,12 @@ void print (int arr[],int size){
   }
   cout<<endl;
 }
+/*the n of element is 5
+1
+3
+2
+4
+5*/
 bool linearSrarch(int arr[],int n,int key){
   //base case
   if(n==0){
