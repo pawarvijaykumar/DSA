@@ -28,9 +28,9 @@ void solve(int  arr[],int n, int index) {
 
 int main() {
 
-  int arr[4] = {1,2,3,4};
+  int arr[3] = {1,1,5};
 
-  solve(arr, 4,0);
+  solve(arr, 3,0);
 
   return 0;
 }
