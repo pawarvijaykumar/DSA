@@ -83,3 +83,43 @@ int main(){
   
   return 0;
 }
+/*
+2. Time Complexity
+
+Merge Sort mein:
+
+Divide part
+
+Har baar:
+
+mid = (start + end) / 2;
+
+Array half hota hai.
+
+So recursion depth:
+
+n → n/2 → n/4 → n/8 → ...
+
+Kitni baar divide kar sakte hain?
+
+log₂ n
+
+So recursion levels = O(log n).
+
+Merge part
+
+Har level par saare n elements ko merge karna padta hai.
+
+Level 1 → n work
+Level 2 → n work
+Level 3 → n work
+...
+log n levels
+
+Therefore:
+
+Time = n × log n
+Final:
+Time Complexity = O(n log n)
+*/
+
