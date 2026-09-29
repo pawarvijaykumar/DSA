@@ -24,7 +24,7 @@ bool linearSrarch(int arr[],int n,int key){
   int remainder=linearSrarch(arr+1,n-1,key);
   return remainder;
   }
-
+//time complexity is o(n)
 
 }
 int main(){

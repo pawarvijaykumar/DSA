@@ -55,3 +55,7 @@ int main(){
 
   return 0;
 }
+
+/*Recursive Binary Search
+Time  = O(log n)
+Space = O(log n)*/
