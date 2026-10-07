@@ -8,7 +8,7 @@ class student{
 
     public:
 
-
+//Encapsulation means wrapping data and the functions that operate on that data inside a class, and controlling access to that data.
     void setHeight(int h){
       height=h;
     }
