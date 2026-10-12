@@ -51,6 +51,7 @@ void insertAttail(Node*&tail,int d){
   tail=temp;
 }
 
+//inser the value in at any position
 int main(){
   Node* node1 = new Node(10);
   
@@ -59,7 +60,7 @@ int main(){
 
   print(head);
   cout<<getLength(head)<<endl;
-
+//insert the value at fisrt
   insertAtHead(head,12);
   print(head);
   
@@ -69,7 +70,7 @@ insertAtHead(head,15);
 insertAtHead(head,19);
   print(head);
   
-
+//insert the value in end
 insertAttail(tail,34);
 print(head);
 
