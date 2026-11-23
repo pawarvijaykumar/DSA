@@ -11,7 +11,6 @@ void solve (stack<int>&s,int x){
 
   }
   int num=s.top();
-
   s.pop();
 
 
